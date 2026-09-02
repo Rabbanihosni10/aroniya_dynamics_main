@@ -26,3 +26,7 @@ function getFirebaseAdminApp() {
 export function getLeadsCollection() {
   return getFirestore(getFirebaseAdminApp()).collection('leads')
 }
+
+export function getSubscriptionsCollection() {
+  return getFirestore(getFirebaseAdminApp()).collection('subscriptions')
+}

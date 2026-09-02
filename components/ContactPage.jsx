@@ -27,6 +27,7 @@ const initialForm = {
   service: '',
   callbackTime: '',
   message: '',
+  website: '',
 }
 
 function Field({ label, name, value, onChange, type = 'text', placeholder, required = false }) {
@@ -112,6 +113,7 @@ export default function ContactPage() {
           <motion.form initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} onSubmit={handleSubmit} className="glass-panel rounded-3xl p-6 sm:p-10">
             <div className="mb-8 flex items-start justify-between gap-6"><div><p className="eyebrow">No pressure, just possibilities</p><h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">Request a free consultation call</h2></div><Clock3 className="mt-1 shrink-0 text-primary" size={24} /></div>
             <div className="grid gap-5 sm:grid-cols-2">
+              <label aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden"><span>Website</span><input name="website" value={form.website} onChange={updateField} tabIndex="-1" autoComplete="off" /></label>
               <Field label="Full Name" name="fullName" value={form.fullName} onChange={updateField} placeholder="Your name" required />
               <Field label="Email" name="email" value={form.email} onChange={updateField} type="email" placeholder="you@company.com" required />
               <Field label="Phone Number" name="phone" value={form.phone} onChange={updateField} type="tel" placeholder="+880..." />

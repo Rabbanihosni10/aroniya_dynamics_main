@@ -1,0 +1,8 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = { title: 'Privacy Policy | Aronia Dynamics', description: 'How Aronia Dynamics collects and uses information.' }
+
+export default function PrivacyPage() {
+  return <main className="mx-auto min-h-screen max-w-3xl px-6 py-16 text-foreground sm:py-24"><Link href="/" className="font-mono text-sm tracking-[.18em] text-primary">ARONIA.</Link><p className="eyebrow mt-20">Legal / Privacy</p><h1 className="mt-4 text-5xl font-bold tracking-tight">Privacy Policy</h1><p className="mt-5 text-muted-foreground">Last updated: September 2, 2026</p><div className="prose prose-invert mt-12 max-w-none space-y-8 text-sm leading-7 text-muted-foreground"><section><h2 className="text-xl font-semibold text-foreground">Information we collect</h2><p>When you request a consultation, we collect the name, email address, contact details, company, service interest, callback preference, and message you provide.</p></section><section><h2 className="text-xl font-semibold text-foreground">How we use it</h2><p>We use this information to respond to enquiries, plan potential engagements, and improve our services. We do not sell personal information.</p></section><section><h2 className="text-xl font-semibold text-foreground">Retention and security</h2><p>We retain enquiry records only as long as reasonably necessary for business and legal purposes and use access controls appropriate to the information.</p></section><section><h2 className="text-xl font-semibold text-foreground">Contact</h2><p>Questions about this policy can be sent to <a className="text-primary" href="mailto:info@aroniadynamics.com">info@aroniadynamics.com</a>.</p></section></div></main>
+}

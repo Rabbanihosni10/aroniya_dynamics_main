@@ -1,0 +1,8 @@
+import type { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = { title: 'Terms of Service | Aronia Dynamics', description: 'Terms governing use of the Aronia Dynamics website and services.' }
+
+export default function TermsPage() {
+  return <main className="mx-auto min-h-screen max-w-3xl px-6 py-16 text-foreground sm:py-24"><Link href="/" className="font-mono text-sm tracking-[.18em] text-primary">ARONIA.</Link><p className="eyebrow mt-20">Legal / Terms</p><h1 className="mt-4 text-5xl font-bold tracking-tight">Terms of Service</h1><p className="mt-5 text-muted-foreground">Last updated: September 2, 2026</p><div className="mt-12 space-y-8 text-sm leading-7 text-muted-foreground"><section><h2 className="text-xl font-semibold text-foreground">Website use</h2><p>Use this website lawfully and do not attempt to disrupt, probe, or gain unauthorized access to its systems.</p></section><section><h2 className="text-xl font-semibold text-foreground">Consultations and engagements</h2><p>Information shared through the website is an enquiry, not a binding offer or contract. Project scope, fees, ownership, and timelines are agreed in a separate written statement of work.</p></section><section><h2 className="text-xl font-semibold text-foreground">Content</h2><p>Website content is provided for general information and may change without notice. Aronia Dynamics makes no promise that every page will always be available or error-free.</p></section><section><h2 className="text-xl font-semibold text-foreground">Contact</h2><p>For questions about these terms, email <a className="text-primary" href="mailto:info@aroniadynamics.com">info@aroniadynamics.com</a>.</p></section></div></main>
+}
